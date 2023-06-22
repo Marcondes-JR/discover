@@ -34,12 +34,12 @@ body {
 
   /*ou
   background-size: contain;
-  width: 100vw;
-  height: 100vh; */
-
+  width: 100vw;*/
+  
   /*shorthand ↓↓↓↓↓↓↓
   background: color image repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh; 
 }
 
 body * {
@@ -48,8 +48,11 @@ body * {
 }
 
 #container {
-  width: 100%; /*360px;*/ /*usei 100% para ocupar toda tela*/
-  max-width: 588px; /*aqui limitei o tamanho máximo do container*/
+  width: 100%;
+  /*360px;*/
+  /*usei 100% para ocupar toda tela*/
+  max-width: 588px;
+  /*aqui limitei o tamanho máximo do container*/
   /*height: 800px;*/
   /*border: 1px solid red;
   margin:auto auto; /*alinhar elemento ao centro no auto*/
@@ -175,4 +178,15 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries - altera a imagem de fundo baseada na tela */
+@media (min-width:700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop-dark.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
