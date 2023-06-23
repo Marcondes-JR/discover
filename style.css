@@ -65,6 +65,9 @@ body * {
   /* alinha tds elementos pai*/
   padding: 24px;
 }
+#profile h4{
+  padding-top: 8px;
+}
 
 #profile img {
   width: 112px;
